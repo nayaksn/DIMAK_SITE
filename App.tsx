@@ -12,8 +12,13 @@ import ContactModal from './components/ContactModal';
 
 function App() {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
+  const [modalTitle, setModalTitle] = useState("Request a Quote");
 
-  const openContactModal = () => setIsContactModalOpen(true);
+  const openContactModal = (title: string = "Request a Quote") => {
+    setModalTitle(title);
+    setIsContactModalOpen(true);
+  };
+
   const closeContactModal = () => setIsContactModalOpen(false);
 
   return (
@@ -28,8 +33,8 @@ function App() {
         <Team />
         <Affiliates />
       </main>
-      <Contact />
-      <ContactModal isOpen={isContactModalOpen} onClose={closeContactModal} />
+      <Contact onOpenContact={openContactModal} />
+      <ContactModal isOpen={isContactModalOpen} onClose={closeContactModal} title={modalTitle} />
     </div>
   );
 }

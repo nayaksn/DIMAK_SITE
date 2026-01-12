@@ -25,8 +25,8 @@ const Team: React.FC = () => {
           {displayedTeam.map((member, index) => (
             <div key={index} className="group relative bg-white">
               <div className="aspect-[4/5] bg-gray-200 overflow-hidden rounded-lg mb-6 relative">
-                 <img 
-                  src={`https://picsum.photos/seed/${member.name.replace(/ /g, '')}/500/625`} 
+                <img
+                  src={member.image ? `/assets/${member.image}` : `https://picsum.photos/seed/${member.name.replace(/ /g, '')}/500/625`}
                   alt={member.name}
                   className="w-full h-full object-cover filter grayscale group-hover:grayscale-0 transition-all duration-500 transform group-hover:scale-105"
                 />
@@ -37,7 +37,7 @@ const Team: React.FC = () => {
                   </span>
                 </div>
               </div>
-              
+
               <div>
                 <h3 className="text-xl font-bold text-dimak-dark mb-1 group-hover:text-dimak-red transition-colors">{member.name}</h3>
                 <p className="text-xs text-dimak-gold font-bold mb-3 uppercase tracking-wide">{member.qualifications}</p>
@@ -57,7 +57,7 @@ const Team: React.FC = () => {
 
         {TEAM.length > 4 && (
           <div className="flex justify-center">
-            <button 
+            <button
               onClick={() => setShowAll(!showAll)}
               className="group inline-flex items-center gap-2 px-8 py-3 bg-white border border-gray-200 rounded-full font-bold text-dimak-dark shadow-sm hover:shadow-md hover:border-dimak-red hover:text-dimak-red transition-all"
             >

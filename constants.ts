@@ -23,7 +23,7 @@ export const CORE_VALUES: CoreValue[] = [
 
 export const SERVICES: ServiceItem[] = [
   {
-    category: "Accounting Services",
+    category: "Accounting, Audit & Taxation Advisory",
     items: [
       "Bookkeeping & Financial Statement Preparation",
       "Management Accounting & Payroll",
@@ -33,24 +33,14 @@ export const SERVICES: ServiceItem[] = [
       "Cost Accounting & Revenue Recognition",
       "Budgeting & Forecasting",
       "AP/AR Management",
-      "Policy & Procedure Development"
-    ]
-  },
-  {
-    category: "Taxation Services",
-    items: [
+      "Policy & Procedure Development",
       "CIT, PIT/PAYE, VAT, WHT",
       "Tax Planning & Transfer Pricing",
       "Tax Health Checks & Audit Representation",
       "International Tax, PPT & Royalties",
       "CGT, Stamp Duties, M&A Tax Due Diligence",
       "Tax Clearance & Tax Tech Tools",
-      "Pioneer Status & Import Duty Waivers"
-    ]
-  },
-  {
-    category: "Audit & Assurance",
-    items: [
+      "Pioneer Status & Import Duty Waivers",
       "Statutory, Internal, Forensic Audit",
       "Tax Audit Support & Risk-Based Audit",
       "Compliance & ESG Audit",
@@ -116,6 +106,7 @@ export const TEAM: TeamMember[] = [
   {
     name: "Anthony Idigbe",
     role: "Chairman",
+    image: "anthony-idigbe.png",
     qualifications: "SAN, Ph.D. (Osgoode)",
     bio: "Senior Partner at PUNUKA Attorneys & Solicitors. President of PUNUKA Consulting Inc. Experienced corporate director and board chair (Capital Hotel Plc, Ikeja Hotel Plc). Licensed to practice law in Nigeria and Ontario, Canada.",
     location: "Lagos"
@@ -123,6 +114,7 @@ export const TEAM: TeamMember[] = [
   {
     name: "Ramesh Biswal",
     role: "Managing Director",
+    image: "ramesh-biswal.png",
     qualifications: "B. Com (Hons), FCA, FCS",
     bio: "38+ years progressive leadership experience, 28 years in Africa. Expert in strategic financial management, fund syndication, IPOs, M&A, and ESG principles.",
     location: "Lagos"
@@ -130,6 +122,7 @@ export const TEAM: TeamMember[] = [
   {
     name: "Adeboye Joseph Taiwo",
     role: "Board Member & Director",
+    image: "adeboye-joseph-taiwo.png",
     qualifications: "FCA, ACTI, CISA, CISM",
     bio: "25+ years experience across banking, investment management, taxation, auditing, and risk advisory. Deep expertise in market and credit risk, M&A, and financial strategy.",
     location: "Pan Africa"
@@ -137,6 +130,7 @@ export const TEAM: TeamMember[] = [
   {
     name: "Sonali Pradhan",
     role: "Founding Shareholder & Director",
+    image: "sonali-pradhan.png",
     qualifications: "M.Sc in Botany",
     bio: "25+ years experience in Travel and Metal industries. Faculty and skill development mentor. Passionate about empowering women entrepreneurs.",
     location: "Global"

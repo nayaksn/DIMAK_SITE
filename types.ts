@@ -6,6 +6,7 @@ export interface ServiceItem {
 export interface TeamMember {
   name: string;
   role: string;
+  image?: string;
   qualifications: string;
   bio: string;
   location?: string;

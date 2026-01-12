@@ -9,7 +9,7 @@ interface HeroProps {
 const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
   return (
     <section id="home" className="relative min-h-screen flex items-center bg-dimak-darker overflow-hidden text-white pt-20">
-      
+
       {/* Abstract Background Animation */}
       <div className="absolute inset-0 w-full h-full overflow-hidden pointer-events-none">
         <div className="absolute top-[-10%] right-[-5%] w-[600px] h-[600px] bg-dimak-red/20 rounded-full mix-blend-screen filter blur-[100px] animate-blob"></div>
@@ -50,7 +50,7 @@ const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
             transition={{ duration: 0.8, delay: 0.4 }}
             className="text-xl md:text-2xl text-gray-400 mb-12 max-w-2xl font-light leading-relaxed"
           >
-            Darubramha International Management and <span className="text-dimak-red font-semibold">Konsulting</span> Ltd. 
+            Darubramha International Management and <span className="text-dimak-red font-semibold">Konsulting</span> Ltd.
             empowers businesses with world-class financial, legal, and operational strategies.
           </motion.p>
 
@@ -60,14 +60,14 @@ const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
             transition={{ duration: 0.8, delay: 0.6 }}
             className="flex flex-col sm:flex-row gap-6"
           >
-            <button 
-              onClick={onOpenContact}
+            <a
+              href="#services"
               className="inline-flex items-center justify-center px-10 py-5 bg-dimak-red text-white font-bold rounded-full shadow-[0_10px_40px_-10px_rgba(214,35,41,0.5)] hover:bg-red-700 hover:scale-105 transition-all duration-300 group"
             >
               Explore Services
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
-            </button>
-            <a 
+            </a>
+            <a
               href="#contact"
               className="inline-flex items-center justify-center px-10 py-5 bg-transparent border border-gray-700 text-white font-bold rounded-full hover:bg-white hover:text-dimak-dark hover:border-white transition-all duration-300"
             >
@@ -76,9 +76,9 @@ const Hero: React.FC<HeroProps> = ({ onOpenContact }) => {
           </motion.div>
         </div>
       </div>
-      
+
       {/* Scroll Indicator */}
-      <motion.div 
+      <motion.div
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 1 }}

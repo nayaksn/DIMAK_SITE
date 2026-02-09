@@ -23,81 +23,56 @@ export const CORE_VALUES: CoreValue[] = [
 
 export const SERVICES: ServiceItem[] = [
   {
-    category: "Accounting, Audit & Taxation Advisory",
+    category: "Accounting & Taxation",
     items: [
-      "Bookkeeping & Financial Statement Preparation",
+      "Bookkeeping, IFRS, Tax planning, Transfer pricing",
+      "Financial Statement Preparation",
       "Management Accounting & Payroll",
       "Fixed Asset Register & Inventory",
-      "Bank Reconciliation & Software Support",
-      "IFRS/IPSAS Reporting",
-      "Cost Accounting & Revenue Recognition",
-      "Budgeting & Forecasting",
-      "AP/AR Management",
-      "Policy & Procedure Development",
       "CIT, PIT/PAYE, VAT, WHT",
-      "Tax Planning & Transfer Pricing",
-      "Tax Health Checks & Audit Representation",
-      "International Tax, PPT & Royalties",
-      "CGT, Stamp Duties, M&A Tax Due Diligence",
-      "Tax Clearance & Tax Tech Tools",
-      "Pioneer Status & Import Duty Waivers",
-      "Statutory, Internal, Forensic Audit",
-      "Tax Audit Support & Risk-Based Audit",
-      "Compliance & ESG Audit",
+      "Tax Health Checks & Audit Representation"
+    ]
+  },
+  {
+    category: "Audit & Assurance",
+    items: [
+      "Internal, Statutory, Forensic, ESG audits and SOPS",
+      "Risk-Based Audit",
+      "Compliance Audit",
       "Value-for-Money & Donor-Funded Audit",
       "Fraud Detection",
-      "Corporate Governance Reviews",
       "Special Investigations"
     ]
   },
   {
-    category: "Management Services",
+    category: "Management & Advisory",
     items: [
+      "Strategy, M&A, Business Turnaround, and virtual CFO services",
       "Strategic Planning & BPR",
-      "Financial Analysis & Budgeting",
       "Operations & Change Management",
-      "HR & Payroll, Corporate Governance",
       "KPI Design & MIS Setup",
-      "Executive Support & Capacity Building",
-      "M&A Integration & Feasibility Studies"
-    ]
-  },
-  {
-    category: "Advisory Services",
-    items: [
-      "Financial & Business Advisory",
-      "Restructuring & Capital Structuring",
-      "PPP & Regulatory Compliance",
-      "Digital Transformation & GRC Frameworks",
       "Debt Recovery & ESG",
-      "IPO Readiness & Transaction Services",
-      "Start-up & SME Advisory"
+      "IPO Readiness"
     ]
   },
   {
-    category: "IT Services",
+    category: "Legal & Governance",
     items: [
-      "ERP & Anti-Money Laundering Solutions",
-      "Omni-Channel Helpdesk & RPA",
-      "Access Management & Email Solutions",
-      "IT Hardware, Accessories & Security",
-      "AI Powered Chat/Voice Bots",
-      "Fraud Risk Management",
-      "Omni-Channel Marketing Automation"
+      "Corporate legal Compliance, Governance roadmaps",
+      "PPP & Regulatory Compliance",
+      "GRC Frameworks",
+      "Board Strategy Advisor",
+      "Company Secretarial Services"
     ]
   },
   {
-    category: "Specialized & Other",
+    category: "Specialized Services",
     items: [
-      "Loan Syndication (Origination to Exit)",
-      "Process Audit (Procurement to IT)",
+      "Loan syndication, Recruitment, Training, Insurance advisory, Business setup",
+      "Process Audit",
       "SOP Preparations",
-      "Merger, Acquisition & Takeover Tax",
-      "Recruitment & Placement",
-      "Training (Technical, Soft Skills, Leadership)",
-      "Business Turnaround & Crisis Management",
-      "Business Set-Up & Legal Registration",
-      "Insurance Advisory Services"
+      "Merger & Acquisition Tax",
+      "Digital Transformation"
     ]
   }
 ];

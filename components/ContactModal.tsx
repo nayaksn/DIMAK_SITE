@@ -45,7 +45,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose, title = "R
   return (
     <AnimatePresence>
       {isOpen && (
-        <div className="fixed inset-0 z-[60] flex items-center justify-center p-4">
+        <div className="fixed inset-0 z-[200] flex items-center justify-center p-4">
           <motion.div
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
@@ -57,7 +57,7 @@ const ContactModal: React.FC<ContactModalProps> = ({ isOpen, onClose, title = "R
             initial={{ opacity: 0, scale: 0.95, y: 20 }}
             animate={{ opacity: 1, scale: 1, y: 0 }}
             exit={{ opacity: 0, scale: 0.95, y: 20 }}
-            className="relative w-full max-w-lg bg-white rounded-2xl shadow-2xl overflow-hidden z-[70]"
+            className="relative w-full max-w-lg bg-white rounded-2xl shadow-2xl overflow-hidden z-[210]"
           >
             <div className="p-6 border-b border-gray-100 flex justify-between items-center bg-gray-50/50">
               <h3 className="text-xl font-display font-bold text-dimak-dark">{title}</h3>

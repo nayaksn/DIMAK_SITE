@@ -1,20 +1,26 @@
 import React, { useState } from 'react';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
-import Highlights from './components/Highlights';
 import About from './components/About';
+import CoreValues from './components/CoreValues';
 import Stats from './components/Stats';
 import Services from './components/Services';
 import Team from './components/Team';
+import Testimonials from './components/Testimonials';
+import CaseStudies from './components/CaseStudies';
 import Affiliates from './components/Affiliates';
 import Contact from './components/Contact';
 import ContactModal from './components/ContactModal';
 
 function App() {
   const [isContactModalOpen, setIsContactModalOpen] = useState(false);
-  const [modalTitle, setModalTitle] = useState("Request a Quote");
+  const [modalTitle, setModalTitle] = useState("Schedule a consultation");
 
-  const openContactModal = (title: string = "Request a Quote") => {
+  // Simple path-based routing
+  const currentPath = typeof window !== 'undefined' ? window.location.pathname : '/';
+  const theme = currentPath === '/1' ? 'dark' : '/';
+
+  const openContactModal = (title: string = "Schedule a consultation") => {
     setModalTitle(title);
     setIsContactModalOpen(true);
   };
@@ -22,15 +28,18 @@ function App() {
   const closeContactModal = () => setIsContactModalOpen(false);
 
   return (
-    <div className="min-h-screen bg-gray-50 text-gray-800 font-sans selection:bg-dimak-red selection:text-white">
-      <Navbar onOpenContact={openContactModal} />
+    <div className={`min-h-screen font-sans selection:bg-dimak-red selection:text-white transition-colors duration-500 ${theme === 'dark' ? 'bg-dimak-darker text-gray-100' : 'bg-gray-50 text-gray-800'
+      }`}>
+      <Navbar onOpenContact={openContactModal} theme={theme} />
       <main>
-        <Hero onOpenContact={openContactModal} />
-        <Highlights />
+        <Hero onOpenContact={openContactModal} theme={theme} />
         <About />
+        <Services onOpenContact={openContactModal} theme={theme} />
         <Stats />
-        <Services />
+        <CoreValues />
         <Team />
+        <Testimonials theme={theme} />
+        <CaseStudies theme={theme} />
         <Affiliates />
       </main>
       <Contact onOpenContact={openContactModal} />

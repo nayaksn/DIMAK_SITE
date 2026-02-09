@@ -4,11 +4,13 @@ import { motion, AnimatePresence } from 'framer-motion';
 
 interface NavbarProps {
   onOpenContact: (title?: string) => void;
+  theme?: 'light' | 'dark';
 }
 
-const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
+const Navbar: React.FC<NavbarProps> = ({ onOpenContact, theme = 'light' }) => {
   const [isOpen, setIsOpen] = useState(false);
   const [scrolled, setScrolled] = useState(false);
+  const isDarkTheme = theme === 'dark';
 
   useEffect(() => {
     const handleScroll = () => {
@@ -26,16 +28,18 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
     { name: 'Contact', href: '#contact' },
   ];
 
+  const useDarkStyle = scrolled || !isDarkTheme;
+
   return (
     <nav
-      className={`fixed w-full z-50 transition-all duration-300 ${scrolled ? 'py-3 shadow-lg glass border-b border-gray-100/50' : 'py-6 bg-transparent'
+      className={`fixed w-full z-[100] transition-all duration-300 ${scrolled ? 'py-3 shadow-lg glass border-b border-gray-100/50' : 'py-6 bg-transparent'
         }`}
     >
       <div className="container mx-auto px-6 flex justify-between items-center">
         {/* Logo */}
         <a href="#home" className="flex items-center group">
           <img
-            src={scrolled ? "/assets/logo_black.png" : "/assets/logo.png"}
+            src={useDarkStyle ? "/assets/logo_black.png" : "/assets/logo.png"}
             alt="DIMAK Logo"
             className="h-12 w-auto transition-all duration-300"
           />
@@ -47,7 +51,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
             <a
               key={link.name}
               href={link.href}
-              className={`font-medium text-sm uppercase tracking-wider hover:text-dimak-red transition-colors relative group ${scrolled ? 'text-gray-600' : 'text-gray-300'}`}
+              className={`font-medium text-sm uppercase tracking-wider hover:text-dimak-red transition-colors relative group ${useDarkStyle ? 'text-gray-600' : 'text-gray-300'}`}
             >
               {link.name}
               <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-dimak-red transition-all group-hover:w-full"></span>
@@ -58,7 +62,7 @@ const Navbar: React.FC<NavbarProps> = ({ onOpenContact }) => {
 
         {/* Mobile Toggle */}
         <button
-          className={`md:hidden focus:outline-none transition-colors ${scrolled ? 'text-dimak-dark' : 'text-white'}`}
+          className={`md:hidden focus:outline-none transition-colors ${useDarkStyle ? 'text-dimak-dark' : 'text-white'}`}
           onClick={() => setIsOpen(!isOpen)}
         >
           {isOpen ? <X className="w-8 h-8" /> : <Menu className="w-8 h-8" />}

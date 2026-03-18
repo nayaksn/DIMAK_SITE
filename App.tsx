@@ -6,8 +6,6 @@ import CoreValues from './components/CoreValues';
 import Stats from './components/Stats';
 import Services from './components/Services';
 import Team from './components/Team';
-import Testimonials from './components/Testimonials';
-import CaseStudies from './components/CaseStudies';
 import Affiliates from './components/Affiliates';
 import Contact from './components/Contact';
 import ContactModal from './components/ContactModal';
@@ -38,8 +36,6 @@ function App() {
         <Stats />
         <CoreValues />
         <Team />
-        <Testimonials theme={theme} />
-        <CaseStudies theme={theme} />
         <Affiliates />
       </main>
       <Contact onOpenContact={openContactModal} />

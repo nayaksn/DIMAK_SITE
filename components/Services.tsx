@@ -51,6 +51,7 @@ interface ServicesProps {
 const Services: React.FC<ServicesProps> = ({ theme = 'light', onOpenContact }) => {
   const [activeIdx, setActiveIdx] = React.useState<number | null>(null);
   const [isModalOpen, setIsModalOpen] = React.useState(false);
+  const initialMount = React.useRef(true);
   const isDark = theme === 'dark';
   const panelRef = React.useRef<HTMLDivElement>(null);
 
@@ -102,6 +103,12 @@ const Services: React.FC<ServicesProps> = ({ theme = 'light', onOpenContact }) =
 
   // Auto-scroll logic (Desktop Only - Slower)
   React.useEffect(() => {
+    // Skip scroll on initial mount
+    if (initialMount.current) {
+      initialMount.current = false;
+      return;
+    }
+
     if (typeof window !== 'undefined' && window.innerWidth >= 1024) {
       if (activeIdx !== null) {
         setTimeout(() => {

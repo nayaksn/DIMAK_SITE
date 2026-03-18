@@ -92,7 +92,7 @@ const Hero: React.FC<HeroProps> = ({ onOpenContact, theme = 'light' }) => {
           >
             <a
               href="#services"
-              className="inline-flex items-center justify-center px-10 py-5 bg-dimak-red text-white font-bold rounded-full shadow-[0_10px_40px_-10px_rgba(214,35,41,0.5)] hover:bg-red-700 hover:scale-105 transition-all duration-300 group"
+              className="inline-flex items-center justify-center px-10 py-5 bg-dimak-red text-white font-bold rounded-full shadow-[0_10px_40px_-10px_rgba(214,35,41,0.5)] hover:bg-red-700 hover:scale-105 transition-all duration-300 group w-full sm:w-auto"
             >
               Explore Services
               <ArrowRight className="ml-2 w-5 h-5 group-hover:translate-x-1 transition-transform" />
@@ -121,7 +121,7 @@ const Hero: React.FC<HeroProps> = ({ onOpenContact, theme = 'light' }) => {
         initial={{ opacity: 0 }}
         animate={{ opacity: 1 }}
         transition={{ delay: 1, duration: 1 }}
-        className={`absolute bottom-10 left-6 md:left-auto md:right-10 flex flex-col items-center gap-2 ${isDark ? 'text-gray-500' : 'text-slate-400'
+        className={`absolute bottom-10 left-6 md:left-auto md:right-10 hidden md:flex flex-col items-center gap-2 ${isDark ? 'text-gray-500' : 'text-slate-400'
           }`}
       >
         <span className="text-xs uppercase tracking-widest writing-vertical-rl">Scroll</span>

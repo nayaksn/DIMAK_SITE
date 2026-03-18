@@ -113,6 +113,7 @@ export const TEAM: TeamMember[] = [
   {
     name: "Chinedu C Onyia",
     role: "Associate Consultant",
+    image: "Chiyendu.png",
     qualifications: "B.Sc Chemical Engineering, Fellow CIBN, FCIA, LBS",
     bio: "23+ years in Corporate Banking (IMB, Citi Bank, Keystone). Strong expertise in business development, strategy formulation, and change management.",
     location: "Lagos"
@@ -120,6 +121,7 @@ export const TEAM: TeamMember[] = [
   {
     name: "Shekhar Kar",
     role: "Associate Consultant",
+    image: "Shekhar-Kar.png",
     qualifications: "B.E. Mechanical, MBA",
     bio: "35+ years technical commercial exposure in steel and aluminum industry. Expert in plant operations, project implementation, and supply chain.",
     location: "Nigeria"
@@ -127,6 +129,7 @@ export const TEAM: TeamMember[] = [
   {
     name: "Ajay Giri",
     role: "Associate Consultant",
+    image: "Ajay-Giri.png",
     qualifications: "B.Com, FCA, MBA",
     bio: "Seasoned CFO with 24+ years experience. Specialist in financial transformation, operational excellence, and cost optimization ($2.5M+ saved annually).",
     location: "Lagos"
@@ -134,6 +137,7 @@ export const TEAM: TeamMember[] = [
   {
     name: "Sukanta Beura",
     role: "Associate Consultant",
+    image: "Sukant-Beura.png",
     qualifications: "FCA, FCS, LLB",
     bio: "35+ years leadership. Expert in large-scale operations, digital transformation, AI, RPA, and cloud technologies in Fortune 500 environments.",
     location: "Global Office / Mumbai"
@@ -141,6 +145,7 @@ export const TEAM: TeamMember[] = [
   {
     name: "Manoj Chanduka",
     role: "Associate Consultant",
+    image: "Manoj-Chanduka.png",
     qualifications: "B.Com (Hons), FCA, FCS",
     bio: "35 years post-qualification experience (Adani Group, Public Financial Institutions). Expert in project appraisal, fund management, and regulatory frameworks.",
     location: "Global Office / Ahmedabad"
@@ -148,6 +153,7 @@ export const TEAM: TeamMember[] = [
   {
     name: "Jaladhar Swain",
     role: "Associate Consultant",
+    image: "Jaladhar-Swain.png",
     qualifications: "B.Com (Hons), FCA",
     bio: "25+ years as project consultant. Deep expertise in critical project analysis, stressed asset management, private equity, and forensic audits.",
     location: "Global Office / Kolkata"
@@ -155,6 +161,7 @@ export const TEAM: TeamMember[] = [
   {
     name: "B N Mohanty",
     role: "Associate Consultant",
+    image: "B-N-Mohanty.png",
     qualifications: "B.Com (Hons), FCA",
     bio: "Managing Partner of B N Mohanty & Associates. Extensive expertise in Corporate Income Tax, Audit, GST, and Tax Planning.",
     location: "Global Office / Puri"
@@ -162,6 +169,7 @@ export const TEAM: TeamMember[] = [
   {
     name: "Parth Sarathi Choudhury",
     role: "Associate Consultant",
+    image: "Parth-Sarathi.png",
     qualifications: "B.Com, LLB, MBA",
     bio: "Corporate Lawyer and Business Consultant with 20+ years. Managing Partner of Elevate Business Solutions DMCC (UAE).",
     location: "Global Office / Dubai"
@@ -169,6 +177,7 @@ export const TEAM: TeamMember[] = [
   {
     name: "Sarbeswar Sahoo",
     role: "Associate Consultant",
+    image: "Sarbeswar-Sahoo.png",
     qualifications: "M.Com, MBA, FIII, ACIN",
     bio: "34+ years in insurance and risk management. Former CEO/CRO at Prestige Assurance (Nigeria). Best CEO among Nigerian insurers (2020).",
     location: "Risk & Insurance - Global"
@@ -176,6 +185,7 @@ export const TEAM: TeamMember[] = [
   {
     name: "Amish Mehta",
     role: "Advisor & Mentor",
+    image: "Amish-Mehta.png",
     qualifications: "FCA, FCS, LLB",
     bio: "40+ years experience in India, London, Singapore. Board member across diverse industries. Focus on M&A, JVs, compliance, and systems.",
     location: "Singapore & London"
@@ -183,6 +193,7 @@ export const TEAM: TeamMember[] = [
   {
     name: "Bijaya Krishna Dash",
     role: "Advisor & Associate Consultant",
+    image: "Bijaya-Krishna-Dash.png",
     qualifications: "B.Com(Hons), FCA, DISA, CAAT, IFRS",
     bio: "42+ years experience. Managing Partner of LALDASH & CO. Specialized in Forensic and Fraud Audits, Tax Planning, and Corporate Governance.",
     location: "Pan India"

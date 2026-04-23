@@ -224,5 +224,6 @@ export const CONTACT_INFO = {
   addressLagos2: "Office II- 8 Egebeyemi street, Ilupeju, Lagos",
   globalLocations: "Abuja | Ilorin | Kano | India | Singapore | UK | Dubai | Kenya",
   phones: ["+234-90-2000-7000", "+234-802-692-2332", "+234-803-580-2699"],
-  email: "darubrahmaindimak@gmail.com"
+  businessEmail: "css@dimakkonsulting.com",
+  jobEmail: "recruitment@dimakkonsulting.com"
 };

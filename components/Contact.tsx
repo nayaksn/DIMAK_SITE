@@ -61,9 +61,18 @@ const Contact: React.FC<ContactProps> = ({ onOpenContact }) => {
                         <div className="space-y-6">
                             <h4 className="text-lg font-bold text-white font-display">Connect</h4>
                             <div className="space-y-4">
-                                <div className="flex items-center gap-4">
-                                    <Mail className="w-5 h-5 text-dimak-red" />
-                                    <a href={`mailto:${CONTACT_INFO.email}`} className="text-gray-300 hover:text-white transition-colors">{CONTACT_INFO.email}</a>
+                                <div className="flex items-start gap-4">
+                                    <Mail className="w-5 h-5 text-dimak-red mt-1" />
+                                    <div className="space-y-3">
+                                        <div>
+                                            <p className="text-[10px] uppercase tracking-[0.2em] text-gray-500 font-bold mb-1">Business Enquiries</p>
+                                            <a href={`mailto:${CONTACT_INFO.businessEmail}`} className="text-gray-300 hover:text-white transition-colors block">{CONTACT_INFO.businessEmail}</a>
+                                        </div>
+                                        <div>
+                                            <p className="text-[10px] uppercase tracking-[0.2em] text-gray-500 font-bold mb-1">Job Applications</p>
+                                            <a href={`mailto:${CONTACT_INFO.jobEmail}`} className="text-gray-300 hover:text-white transition-colors block">{CONTACT_INFO.jobEmail}</a>
+                                        </div>
+                                    </div>
                                 </div>
                                 <div className="flex items-center gap-4">
                                     <Phone className="w-5 h-5 text-dimak-red" />

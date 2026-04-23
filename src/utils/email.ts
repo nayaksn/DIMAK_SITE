@@ -20,7 +20,7 @@ async function sendEmail({ subject, recipients, htmlContent }: SendEmailParams) 
                 'content-type': 'application/json'
             },
             body: JSON.stringify({
-                sender: { name: "DIMAK Corporate Team", email: "css@dimakkonsulting.com" },
+                sender: { name: "DIMAK Corporate Team", email: "sn_vicky@yahoo.com" },
                 to: recipients,
                 subject: subject,
                 htmlContent: htmlContent

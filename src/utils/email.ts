@@ -1,15 +1,16 @@
 const BREVO_API_KEY = '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'; // Brevo REST API Key
 const BREVO_API_URL = 'https://api.brevo.com/v3/smtp/email';
 export const ADMIN_EMAIL = 'nayaksn@gmail.com';
-const NOTIFICATION_RECIPIENT = ADMIN_EMAIL;
+export const BUSINESS_EMAIL = 'css@dimakkonsulting.com';
+const NOTIFICATION_RECIPIENTS = [ADMIN_EMAIL, BUSINESS_EMAIL];
 
 interface SendEmailParams {
     subject: string;
-    toEmail: string;
+    recipients: { email: string }[];
     htmlContent: string;
 }
 
-async function sendEmail({ subject, toEmail, htmlContent }: SendEmailParams) {
+async function sendEmail({ subject, recipients, htmlContent }: SendEmailParams) {
     try {
         const response = await fetch(BREVO_API_URL, {
             method: 'POST',
@@ -19,8 +20,8 @@ async function sendEmail({ subject, toEmail, htmlContent }: SendEmailParams) {
                 'content-type': 'application/json'
             },
             body: JSON.stringify({
-                sender: { name: "DIMAK Corporate Team", email: "sn_vicky@yahoo.com" },
-                to: [{ email: toEmail }],
+                sender: { name: "DIMAK Corporate Team", email: "css@dimakkonsulting.com" },
+                to: recipients,
                 subject: subject,
                 htmlContent: htmlContent
             })
@@ -57,5 +58,9 @@ export async function sendLeadNotification(leadData: any) {
         </div>
     `;
 
-    return sendEmail({ subject, toEmail: NOTIFICATION_RECIPIENT, htmlContent });
+    return sendEmail({
+        subject,
+        recipients: NOTIFICATION_RECIPIENTS.map(email => ({ email })),
+        htmlContent
+    });
 }

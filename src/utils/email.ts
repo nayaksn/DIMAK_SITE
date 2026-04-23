@@ -1,4 +1,4 @@
-const BREVO_API_KEY = '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'; // Brevo REST API Key
+const BREVO_API_KEY = import.meta.env.VITE_BREVO_API_KEY; // Brevo REST API Key
 const BREVO_API_URL = 'https://api.brevo.com/v3/smtp/email';
 export const ADMIN_EMAIL = 'nayaksn@gmail.com';
 export const BUSINESS_EMAIL = 'css@dimakkonsulting.com';
